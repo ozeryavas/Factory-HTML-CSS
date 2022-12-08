@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,28 +44,28 @@
         <img src="img/factory-gac37f0c77_1920.jpg" alt="factory">
         <div id="left">
             <div class="clearfix">
-                <div id="image">
+                <div class="image">
                     <a href="#"><img src="img/51133823674_8ae53b2620_c.jpg" alt="machine"></a>
                 </div>
-                <div id="content">
+                <div class="content">
                     <a href="#"><h2>Lorem ipsum dolor sit amet, consectetur elit cupiditate facere animi est</h2></a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nihil quam ab aliquid reiciendis earum voluptatum possimus magnam repudiandae culpa, alias non quae cum vitae! <a href="#">Read more...</a></p>
                 </div>
             </div>
             <div class="clearfix">
-                <div id="image">
+                <div class="image">
                     <a href="#"><img src="img/shoes-g9eee37a3f_1920.jpg" alt="shoes"></a>
                 </div>
-                <div id="content">
+                <div class="content">
                     <a href="#"><h2>Lorem ipsum dolor sit amet consectetur</h2></a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nihil quam ab aliquid reiciendis earum voluptatum possimus magnam repudiandae culpa, alias non quae cum vitae! <a href="#">Read more...</a></p>
                 </div>
             </div>
             <div class="clearfix">
-                <div id="image">
+                <div class="image">
                     <a href="#"><img src="img/worker-g88ef5af09_1920.jpg" alt="worker"></a>
                 </div>
-                <div id="content">
+                <div class="content">
                     <a href="#"><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, deleniti sunt!</h2></a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nihil quam ab aliquid reiciendis earum voluptatum possimus magnam repudiandae culpa, alias non quae cum vitae! <a href="#">Read more...</a></p>
                 </div>
@@ -158,17 +158,12 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nisi odio ullam et minus quod unde doloremque libero ab eaque. Accusamus odit corrupti aut nihil consequatur suscipit quaerat, labore ut!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta ipsum molestiae accusamus ab placeat odio cupiditate ad autem pariatur iusto mollitia cumque repellat nesciunt quibusdam saepe dolorem quo alias eius aperiam magnam, sed laboriosam, enim fugit! Doloremque iure, ipsa illo nulla alias similique consequatur perferendis modi perspiciatis dolorem sed ducimus exercitationem quibusdam in vero. Molestias natus magni, illum pariatur dolor voluptatum illo sequi esse sed ex, quos reprehenderit impedit consectetur recusandae. Veritatis expedita eius iste aliquam ut, quo nihil recusandae quae? Minus architecto vitae ad sequi illum. Sed ipsa neque quisquam nesciunt inventore doloribus alias quod et asperiores hic.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum reprehenderit in quod accusamus molestiae ducimus unde, perferendis omnis commodi!</p>
-            <ul>
-                <h3>Career Categories:</h3>
-                <a href="#"><li>Category-1</li></a>
-                <a href="#"><li>Category-2</li></a>
-                <a href="#"><li>Category-3</li></a>
-                <a href="#"><li>Category-4</li></a>
-            </ul>
+            <h3 id="categories">Career Categories:</h3>
+            <button>Category-1</button><button>Category-2</button><button>Category-3</button><button>Category-4</button>
         </div>
     </section>
     <section id="contact">
-        <div id="left">
+        <div class="left">
             <h4>Factory Limited</h4>
             <p>
             2 Address Address Address Address Address,<br>
@@ -177,23 +172,24 @@
             AB.<br>
             AB1 3CD.<br><br>
             Call +01 (0) 123 456 7890<br>
+            info@abcd.ef.gh<br>
             sales@abcd.ef.gh<br><br>
 
             Open 8:00 - 17:00 Mon - Fri, 9:00 - 15:00 Sat
             </p><br><br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317715.71193692513!2d-0.38178583985785625!3d51.528735196048615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2zTG9uZHJhLCBCaXJsZcWfaWsgS3JhbGzEsWs!5e0!3m2!1str!2str!4v1670248589453!5m2!1str!2str" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div id="right">
+        <div class="right">
             <h4>Get in Touch</h4>
             <form action="#">
                 <label for="firstname">First Name<span>*</span></label><br>
-                <input type="text" id="firstname" name="firstname" placeholder="Please enter your name..."><br><br>
+                <input type="text" id="firstname" name="firstname" placeholder="Please enter your first name"><br><br>
                 <label for="lastname">Last Name<span>*</span></label><br>
-                <input type="text" id="lastname" name="lastname" placeholder="Please enter your last name..."><br><br>
+                <input type="text" id="lastname" name="lastname" placeholder="Please enter your last name"><br><br>
                 <label for="email">E-mail<span>*</span></label><br>
-                <input type="email" id="email" name="email" placeholder="Please enter e-mail address..."><br><br>
+                <input type="email" id="email" name="email" placeholder="Please enter your e-mail address"><br><br>
                 <label for="text">Message<span>*</span></label><br>
-                <textarea type="text" name="text" id="text" placeholder="Please text your message..."></textarea><br>
+                <textarea name="text" id="text" placeholder="Please enter your message"></textarea><br>
                 <input type="submit" value="Send">
             </form>
         </div>
