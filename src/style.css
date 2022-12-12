@@ -49,16 +49,11 @@ nav ul li a:hover {
     float: left;
     margin-left: 5%;
     padding: 2.5vw 0;
-    overflow: hidden; 
 }
 
 .menu li a {
     margin-right: 2.5vw; 
     display: block;
-}
-
-nav ul.menu li:last-child {
-    display: none;
 }
 
 .social {
@@ -317,6 +312,7 @@ iframe {
 #contact input, textarea {
     width: 43vw;
     height: 3.2vw;
+    font-size: 1vw;
     text-align: left;
     padding: 1vw 2vw;
     margin: 1vw 0; 
@@ -381,49 +377,79 @@ footer a:hover {
     transition: all 0.2s;
 }
 
-/* responsive design */
-/*
-@media screen and (max-width: 768px) {
-nav ul#menu li:last-child {
-   display: inline-block;
-   background-color: #D6E4E5;
-}
+/* respponsive design */
 
-nav button:hover {
-    background-color: #D6E4E5;
-    color: #EB6440;
-}
-
-nav ul#menu li {
-  display: none;
-}
-} */
-/*
 @media screen and (max-width: 600px) {
-    nav .menu li {display: none;}
-    nav .menu li:last-child {
-      float: right;
-      display: block;
-    }
+  
+  /* section (home) */
+  section#home {
+    height: 140vw; 
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/sky-956976_1280.jpg);
   }
-  */
-  @media screen and (max-width: 600px) {
-    nav .menu {
-        position: relative;
-        display: inline-block;
-    }
 
-    nav .menu li {
-      float: none;
-      display: none;
-      text-align: left;
-    }
-
-    nav ul.menu li:last-child {
-        display: inline-block;
-    }
-
-    nav .social {
-        display: block;
-    }
+  #home #left {
+    width: 90%;
+    min-height: 45vw; 
+    margin: 5vw 5vw 0 5vw;
   }
+  #home #right {
+    width: 90%;
+    min-height: 45vw; 
+    margin: 5vw;
+  }
+
+  /* section (products) */
+  section#products {
+    height: 185vw;
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/worker-g88ef5af09_1920.jpg);
+  }
+
+  .product {
+    float: left;
+    width: 45%;
+  } 
+}
+
+@media screen and (max-width: 400px) {
+  /* section (products) */
+  section#products {
+    height: 635vw;
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/worker-g88ef5af09_1920.jpg);
+  }
+
+  .product {
+    width: 90%;
+    margin: 5vw;
+  }
+  
+  /* section (careers) */
+  #careers img {
+    width: 100%;
+    max-height: 60vw; 
+  }
+
+  #careers div {
+    width: 100%;
+    min-height: 35vw; 
+  }
+
+  /* section (contact) */
+  section#contact {
+    height: 220vw; 
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/wall-21534_960_720.jpg);
+  }
+
+  #contact .right {
+    width: 90%;
+    height: 56vw; 
+    text-align: center;
+    margin: 5vw 5vw 0 5vw;
+  }
+
+  #contact .left {
+    width: 90%;
+    height: 56vw; 
+    text-align: center;
+    margin: 0 5vw;
+  }
+}
