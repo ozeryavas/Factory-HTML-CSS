@@ -10,7 +10,6 @@ body {
 }
 
 /* nav */
-
 nav {
     position: sticky;
     top: 0;
@@ -25,12 +24,16 @@ nav img {
     float: left;
     margin-left: 5%;
     width: 15vw;
-    border-radius: 2vw; 
+    padding: 0.3vw 0;
 }
 
 nav ul li {
     list-style-type: none;
     display: inline-block;
+}
+
+nav ul li a.icon {
+    display: none;
 }
 
 nav ul li a {
@@ -67,7 +70,6 @@ nav ul li a:hover {
 }
 
 /* section (home) */
-
 section {
     background-repeat: no-repeat;
     background-position: center;
@@ -77,7 +79,7 @@ section {
 
 section#home {
     height: 75vw; 
-    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/sky-956976_1280.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/sky.jpg);
 }
 
 section img {
@@ -183,10 +185,9 @@ section img {
 }
 
 /* section (products) */
-
 section#products {
     height: 72vw;
-    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/worker-g88ef5af09_1920.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/home3.jpg);
 }
 
 .product {
@@ -228,7 +229,6 @@ section#products {
 }
 
 /* section (careers) */
-
 #careers img {
     width: 50%;
     max-height: 45vw; 
@@ -269,10 +269,9 @@ button:hover {
 }
 
 /* section (contact) */
-
 section#contact {
     height: 102vw; 
-    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/wall-21534_960_720.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/wall.jpg);
 }
 
 #contact .right {
@@ -354,7 +353,6 @@ iframe {
   }
 
 /* footer */
-
 footer {
     background-color: #497174;
     color: #D6E4E5;
@@ -378,13 +376,11 @@ footer a:hover {
 }
 
 /* respponsive design */
-
 @media screen and (max-width: 600px) {
-  
   /* section (home) */
   section#home {
     height: 140vw; 
-    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/sky-956976_1280.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/sky.jpg);
   }
 
   #home #left {
@@ -401,7 +397,7 @@ footer a:hover {
   /* section (products) */
   section#products {
     height: 185vw;
-    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/worker-g88ef5af09_1920.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/home3.jpg);
   }
 
   .product {
@@ -411,10 +407,38 @@ footer a:hover {
 }
 
 @media screen and (max-width: 400px) {
+  /* nav */
+  nav {
+    height: 16vw;
+  }
+
+  nav img {
+    float: left;
+    margin-left: 5%;
+    width: 15vw;
+    padding: 4vw 0; 
+  }
+
+  nav .menu {
+    margin: 0.5vw 5vw;
+    width: 50%;
+    text-align: center;
+  }
+
+  nav ul.menu li {
+    display: block;
+    margin-bottom: 1vw;
+
+  }
+
+  .social {
+    padding: 6vw 0;
+  }
+
   /* section (products) */
   section#products {
     height: 635vw;
-    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/worker-g88ef5af09_1920.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/home3.jpg);
   }
 
   .product {
@@ -436,7 +460,7 @@ footer a:hover {
   /* section (contact) */
   section#contact {
     height: 220vw; 
-    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/wall-21534_960_720.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/wall.jpg);
   }
 
   #contact .right {
