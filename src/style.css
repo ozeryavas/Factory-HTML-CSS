@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --dark: #497174;
+  --light: #D6E4E5;
+  --orange: #EB6440;
+  --border: 1px solid #497174;
+  --border-radius: 5px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+}
+
+/* nav */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--light);
+    width: 100%;
+    height: 8vw;
+    padding: 0.6vw 0; 
+    border-bottom: 0.5vw solid var(--dark);
+}
+
+nav img {
+    float: left;
+    margin-left: 5%;
+    width: 15vw;
+    padding: 0.3vw 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--dark);
+    transition: all 0.2s;
+}
+
+nav ul li a:hover {
+    color: var(--orange);
+    transition: all 0.2s;
+}
+
+.menu {
+    float: left;
+    margin-left: 5%;
+    padding: 2.5vw 0;
+}
+
+.menu li a {
+    margin-right: 2.5vw; 
+    display: block;
+}
+
+.social {
+    float: right;
+    margin-right: 5%;
+    padding: 2.5vw 0; 
+}
+
+.social li a {
+    margin-left: 1.2vw; 
+}
+
+.social li span {
+    color: var(--dark);
+    margin-left: 1.2vw;
+}
+
+/* section (home) */
+section {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
+    background-size: cover;
+}
+
+section#home {
+    height: 75vw; 
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/sky.jpg);
+}
+
+section img {
+    width: 100%;
+}
+
+#home #left {
+    float: left;
+    width: 61%;
+    min-height: 45vw; 
+    margin: 3% 0 3% 3%;
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+#home #left div a {
+    text-decoration: none;
+    color: var(--dark);
+    transition: all 0.2s;
+}
+
+#home #left div a:hover {
+    text-decoration: none;
+    color: var(--orange);
+    transition: all 0.2s;
+}
+
+#home #left div h2 {
+    transition: all 0.2s;
+}
+
+#home #left div h2:hover {
+    color: var(--orange);
+    transition: all 0.2s;
+}
+
+#home #left .image {
+    width: 25%;
+    float: left;
+    margin: 2%;
+}
+
+#home #left .content {
+    width: 65%;
+    float: left;
+    margin: 2%;
+    text-align: justify;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+#home #right {
+    float: right;
+    width: 30%;
+    min-height: 45vw; 
+    margin: 3%;
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+#home #right h3 {
+    padding: 2%;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--dark);
+}
+
+#home #right p {
+    padding: 2%;
+}
+
+#home #right p a {
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0.1vw;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    transition: all 0.2s;
+}
+
+#home #right p a:hover {
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    transition: all 0.2s;
+}
+
+#home #right #ads {
+    background-color: var(--light);
+    border: var(--border);
+    font-size: 0.7vw;
+    font-weight: bold;
+    text-align: justify;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.3);
+    width: 94%;
+    height: 16vw; 
+    margin: 3%;
+    padding: 2%;
+}
+
+/* section (products) */
+section#products {
+    height: 72vw;
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/home3.jpg);
+}
+
+.product {
+    color: var(--dark);
+    float: left;
+    width: 21.25%;
+    margin: 3% 0 0 3%;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    transition: all 0.2s;
+}
+
+.product:hover {
+    box-shadow: 2px 2px 20px var(--dark);
+    transition: all 0.2s;
+}
+
+.product div {
+    padding: 1.3vw 1.5vw ; 
+    text-align: center;
+}
+
+.product div a {
+    display: block;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    color: var(--dark);
+    background-color: var(--light);
+    font-weight: bolder;
+    margin: 1.2vw 4.8vw 0.4vw;
+    padding: 1.2vw; 
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+.product div a:hover {
+    background-color: var(--orange);
+    color: var(--light);
+    transition: all 0.2s;
+}
+
+/* section (careers) */
+#careers img {
+    width: 50%;
+    max-height: 45vw; 
+    float: left;
+}
+
+#careers div {
+    width: 50%;
+    min-height: 45vw; 
+    float: right;
+    text-align: center;
+    padding: 3vw;
+    color: var(--dark);
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/careers-bg.jpg);
+}
+
+#careers div h3#categories {
+    margin: 4vw 0;
+    text-align: left;
+}
+
+button {
+    padding: 1vw 2vw;
+    background-color: var(--light);
+    font-size: 1vw;
+    color: var(--dark);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin-right: 1vw;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: var(--orange);
+    color: var(--light);
+    transition: all 0.2s;
+}
+
+/* section (contact) */
+section#contact {
+    height: 60vw; 
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/wall.jpg);
+}
+
+#contact .right {
+    width: 50%;
+    height: 56vw; 
+    float: right;
+    text-align: left;
+    padding: 3vw;
+    color: var(--dark);
+}
+
+#contact .left {
+    width: 50%;
+    height: 56vw; 
+    float: left;
+    text-align: left;
+    padding: 3vw;
+    color: var(--dark);
+}
+
+iframe {
+    width: 43vw;
+    margin-top: 1.1vw;
+    height: 24vw; 
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+#contact div h4 {
+    margin-bottom: 2vw;
+}
+
+#contact h4 {
+    margin-top: 3vw; 
+}
+
+#contact input, textarea {
+    width: 43vw;
+    height: 3.2vw;
+    font-size: 1vw;
+    text-align: left;
+    padding: 1vw 2vw;
+    margin: 1vw 0; 
+    border: var(--border);
+    border-radius: var(--border-radius);
+    outline: none;
+    transition: all 0.2s;
+  }
+
+  #contact span {
+    color: red;
+  }
+
+  #contact input:focus, textarea:focus {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    transition: all 0.2s;
+  }
+
+  #contact textarea {
+    height: 10vw;
+  }
+
+  #contact input[type=submit] {
+    width: 12vw;
+    background-color: var(--dark);
+    font-weight: bolder;
+    margin-top: 2vw;
+    color: var(--light);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  #contact input[type=submit]:hover {
+    background-color: var(--orange);
+    transition: all 0.2s;
+  }
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    color: var(--light);
+    width: 100%;
+    height: 3.8vw;
+    margin-top: 0;
+}
+
+footer span {
+    color: var(--orange);
+    font-weight: bolder;
+}
+
+footer a {
+    color: var(--light);
+    font-weight: bolder;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+footer a:hover {
+    color: var(--orange);
+    transition: all 0.2s;
+}
+
+/* responsive design */
+@media screen and (max-width: 600px) {
+  /* section (home) */
+  section#home {
+    height: 150vw; 
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/sky.jpg);
+  }
+
+  #home #left {
+    width: 90%;
+    min-height: 45vw; 
+    margin: 5vw 5vw 0 5vw;
+  }
+  #home #right {
+    width: 90%;
+    min-height: 45vw; 
+    margin: 5vw;
+  }
+
+  /* section (products) */
+  section#products {
+    height: 185vw;
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/home3.jpg);
+  }
+
+  .product {
+    float: left;
+    width: 45%;
+  } 
+}
+
+@media screen and (max-width: 400px) {
+  /* nav */
+  nav {
+    height: 16vw;
+  }
+
+  nav img {
+    float: left;
+    margin-left: 5%;
+    width: 15vw;
+    padding: 4vw 0; 
+  }
+
+  nav .menu {
+    margin: 0.5vw 5vw;
+    width: 50%;
+    text-align: center;
+  }
+
+  nav ul.menu li {
+    display: block;
+    margin-bottom: 1vw;
+  }
+
+  .social {
+    padding: 6vw 0;
+  }
+
+  /* section (products) */
+  section#products {
+    height: 635vw;
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/home3.jpg);
+  }
+
+  .product {
+    width: 90%;
+    margin: 5vw;
+  }
+  
+  /* section (careers) */
+  #careers img {
+    width: 100%;
+    max-height: 60vw; 
+  }
+
+  #careers div {
+    width: 100%;
+    min-height: 35vw; 
+  }
+
+  /* section (contact) */
+  section#contact {
+    height: 130vw; 
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/wall.jpg);
+  }
+
+  #contact .right {
+    width: 90%;
+    height: 56vw; 
+    text-align: center;
+    margin: 5vw 5vw 0 5vw;
+  }
+
+  #contact .left {
+    width: 90%;
+    height: 56vw; 
+    text-align: center;
+    margin: 0 5vw;
+  }
+}
